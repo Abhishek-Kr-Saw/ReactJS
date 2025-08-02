@@ -1,0 +1,21 @@
+What is Virtual DOM?
+
+Virtual DOM (VDOM) is a lightweight, in-memory representation of the real DOM used in libraries like React to improve performance.
+
+Simply:
+- DOM (Document Object Model) is how browsers represent HTML elements.
+- Updating the real DOM is slow.
+- So, Virtual DOM acts as a middle layer between your code and the real DOM.
+
+How It Works:
+1. Render: React creates a virtual DOM tree from components.
+2. Diffing: On updates, React compares the new VDOM with the previous one (called diffing).
+3. Update: Only the parts that changed are updated in the real DOM (called reconciliation).
+
+Advantages:
+- Faster updates
+- Better performance
+- Clean and predictable UI rendering
+
+Example Analogy:
+Think of Virtual DOM like a blueprint. You modify the blueprint, and React updates only the necessary parts of the actual building (webpage).
