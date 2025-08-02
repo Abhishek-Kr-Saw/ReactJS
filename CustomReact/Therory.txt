@@ -1,0 +1,22 @@
+Building a Custom React - Summary Notes
+
+1. Objective:
+   The goal is to create a minimal version of React to understand its core workings and build confidence with how React functions under the hood.
+
+2. Core Components:
+   - index.html: Contains a basic HTML boilerplate with a <div id="root"></div> element.
+   - customreact.js: A JavaScript file responsible for handling the logic similar to React.
+
+3. React Element Structure:
+   React (or your custom implementation) represents UI elements as plain JavaScript objects. These objects include:
+   - type: The HTML tag (e.g., 'div', 'p', 'a')
+   - props: An object of attributes (e.g., href, target)
+   - children: The content or nested elements inside the component
+
+4. Custom Render Method:
+   A function named customRender is used to render the above elements into the DOM:
+   Step-by-step process:
+   - Step 1: Use document.createElement() to create a DOM node based on the 'type' field.
+   - Step 2: Set its text content using innerHTML with the value from 'children'.
+   - Step 3: Use setAttribute() to assign each key-value pair in 'props' as an attribute.
+   - Step 4: Append this DOM node to the root container using appendChild().
