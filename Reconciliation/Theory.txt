@@ -1,0 +1,21 @@
+What is the Reconciliation Engine in React?
+
+The Reconciliation Engine is the core algorithm in React that figures out what changed in the UI and updates the DOM efficiently.
+
+Simply:
+- When you update the state or props, React re-renders components.
+- The reconciliation engine compares the new Virtual DOM with the old one.
+- It then updates only the parts of the real DOM that changed — not the entire page.
+
+Steps in Reconciliation:
+1. Render: React builds a new Virtual DOM tree.
+2. Diff: It compares the new tree with the old tree.
+3. Update: It finds the minimal number of changes needed and updates the real DOM.
+
+Powered by Fiber:
+React’s Fiber architecture handles this reconciliation process with added benefits like pausing, prioritizing, and scheduling tasks.
+
+Why It’s Important:
+- Boosts performance
+- Makes UI updates faster and smoother
+- Avoids unnecessary DOM updates
