@@ -1,0 +1,21 @@
+What is Fiber in React?
+
+Fiber is the new reconciliation engine introduced in React 16. It’s the system behind how React updates the Virtual DOM and the real DOM efficiently.
+
+Simply:
+- React used to update everything synchronously, which could block the UI.
+- Fiber allows React to break work into smaller chunks, so it can pause, resume, or cancel rendering tasks.
+
+Think of it Like:
+A to-do list where React does tasks step-by-step, instead of all at once — so your app stays responsive.
+
+Key Features of Fiber:
+- Incremental rendering: Updates can be split and paused.
+- Prioritization: Important updates (like user input) happen first.
+- Error handling: Better support for error boundaries.
+- Concurrency: Enables features like React Concurrent Mode and Suspense.
+
+Why Fiber Matters:
+- Keeps UI smooth and responsive
+- Makes advanced features like lazy loading, suspense, and concurrent rendering possible
+- Improves performance and flexibility
