@@ -1,0 +1,29 @@
+
+React Hooks & Counter App – Quick Revision
+
+- Why Hooks?
+  - Regular JavaScript variables don’t update the React UI.
+  - React uses "Hooks" like useState to manage data and trigger UI updates.
+
+- useState Hook
+  - Syntax: const [state, setState] = useState(initialValue);
+  - Use setState(newVal) to update and re-render the UI.
+  - Never modify the state directly (e.g., counter = counter + 1 is incorrect).
+
+- Project Setup (Vite)
+  - Create project: npm create vite@latest
+  - Install dependencies: npm install
+  - Run the dev server: npm run dev
+  - Clean the App.jsx file for a fresh start
+
+- Counter App Flow
+  - Display counter value and two buttons (increase and decrease).
+  - Problem: Using a let variable updates in the console but not on the UI.
+  - Solution: Use useState and update using setCounter.
+
+- Bonus: Prevent Invalid Counts
+  - Add condition to prevent the counter from going below 0 or above 20.
+
+- Summary
+  - Always use useState for values that affect the UI.
+  - setState triggers React to re-render the component.
