@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+#right::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+#right img{
+    height: 100%;
+}
